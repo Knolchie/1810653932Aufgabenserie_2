@@ -1,20 +1,83 @@
+import javax.swing.*;
+
 public class aufgabe5_1810653932 {
-    public static void main(String[] args) {
+
+    public static void main(String[] args){
+
+        int forlauf1 = 5;
+
+        int forlauf2 = 3;
+
+        int userzahl1 = Integer.parseInt(JOptionPane.showInputDialog("Geben sie eine Zahl ein"));
+
+        int userzahl2 = Integer.parseInt(JOptionPane.showInputDialog("Geben Sie eine zweite Zahl ein"));
+
+        forschleife(forlauf1);
+
+        forschleife(forlauf2);
+
+        whileschleife(forlauf1);
+
+        whileschleife(forlauf2);
+
+        nutzerschleife(userzahl1, userzahl2);
 
 
-        int a = 4;
-        forschleife(a);
+
     }
 
-    static void forschleife(int a) {
+    private static void forschleife(int durchlauf){
 
-        for (int i = 1; i <= a; i++) //Zählervariable; Schrittweite; Anweisung
+        for(int i= 0; i<durchlauf; i++){
 
-        {
-
-            System.out.println("Schleifenzähler: " + i);
+            System.out.println("Der Schleifenzähler ist: "+ (i + 1));
 
         }
 
     }
-}
+
+    private static void whileschleife(int durchlauf){
+
+        int i = 1;
+
+        while(i <= durchlauf){
+
+            if (i%2!=0){
+
+                i++;
+
+            }
+
+            else if (i<=durchlauf){
+
+                System.out.println("Der Schleifenzähler ist: "+(i++));
+
+            }
+
+
+        }
+
+    }
+
+    private static void nutzerschleife(int durchlauf1, int durchlauf2) {
+
+        int durchlauf = 1;
+
+        for (int i = 0; i < durchlauf1; i++){
+
+            for (int j = 0; j < durchlauf2; j++){
+
+                System.out.println("Das ist der " + durchlauf + ". Durchlauf der inneren Schleife!");
+
+                durchlauf++;
+
+            }
+
+        }
+
+    }
+
+
+
+
+            }
