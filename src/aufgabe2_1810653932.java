@@ -11,7 +11,7 @@ public class aufgabe2_1810653932 {
         int benutzer2 = Integer.parseInt(JOptionPane.showInputDialog(null, "Bitte geben sie eine 2te zahl ein"));
 
 
-        while (true) {  //boolean true = alles in while schleife
+        while (benutzer1!=benutzer2) {
 
             zähler++;
 
